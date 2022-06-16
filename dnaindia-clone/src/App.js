@@ -11,8 +11,12 @@ function App() {
     <VStack backgroundColor="#f5f5f5" textColor="black">
       <Navbar />
       <SliderNav/>
-      <Flex w="100%" overflow="hidden" overflowX="auto" postion="relative">
-              <Link as={Routelink} to="/latestnews">
+      <Flex w="100%" overflow="hidden" overflowX="auto" postion="relative" display={{base:'flex', md:'flex', lg:'none'}} __css={{'&::-webkit-scrollbar': {
+          w: '2',
+        }}}>
+              <Link as={Routelink} to="/latestnews"  _hover={{
+                textDecoration:"none"
+              }}>
                 <Flex
                 boxSizing="borderBox"
                 alignItems="center"
@@ -33,7 +37,9 @@ function App() {
                   </Box>
                 </Flex>
               </Link>
-              <Link as={Routelink} to="/photos">
+              <Link as={Routelink} to="/photos"  _hover={{
+                textDecoration:"none"
+              }}>
                 <Flex
                 
                 alignItems="center"
@@ -51,7 +57,9 @@ function App() {
                   <Text textDecoration="none">Photos</Text>
                 </Flex>
               </Link>
-              <Link as={Routelink} to="/videos">
+              <Link as={Routelink} to="/videos"  _hover={{
+                textDecoration:"none"
+              }}>
                 <Flex
                 
                 alignItems="center"
@@ -69,7 +77,9 @@ function App() {
                   <Text textDecoration="none">Videos</Text>
                 </Flex>
               </Link>
-              <Link as={Routelink} to="/explainer">
+              <Link as={Routelink} to="/explainer"  _hover={{
+                textDecoration:"none"
+              }}>
                 <Flex
                 
                 alignItems="center"
@@ -86,7 +96,9 @@ function App() {
                   <Text textDecoration="none">Explainers</Text>
                 </Flex>
               </Link>
-              <Link as={Routelink} to="/india">
+              <Link as={Routelink} to="/india"  _hover={{
+                textDecoration:"none"
+              }}>
                 <Flex
                 
                 alignItems="center"
@@ -103,7 +115,9 @@ function App() {
                   <Text textDecoration="none">India</Text>
                 </Flex>
               </Link>
-              <Link as={Routelink} to="/entertainment">
+              <Link as={Routelink} to="/entertainment"  _hover={{
+                textDecoration:"none"
+              }}>
                 <Flex
                 
                 alignItems="center"
@@ -120,7 +134,9 @@ function App() {
                   <Text textDecoration="none">Entertainment</Text>
                 </Flex>
               </Link>
-              <Link as={Routelink} to="/sports">
+              <Link as={Routelink} to="/sports"  _hover={{
+                textDecoration:"none"
+              }}>
                 <Flex
                 
                 alignItems="center"
@@ -137,7 +153,9 @@ function App() {
                   <Text textDecoration="none">Sports</Text>
                 </Flex>
               </Link>
-              <Link as={Routelink} to="/viralnews">
+              <Link as={Routelink} to="/viralnews"  _hover={{
+                textDecoration:"none"
+              }}>
                 <Flex
                 
                 alignItems="center"
@@ -154,7 +172,9 @@ function App() {
                   <Text textDecoration="none">Viral News</Text>
                 </Flex>
               </Link>
-              <Link as={Routelink} to="/lifestyles">
+              <Link as={Routelink} to="/lifestyles"  _hover={{
+                textDecoration:"none"
+              }}>
                 <Flex
                 
                 alignItems="center"
@@ -171,7 +191,9 @@ function App() {
                   <Text textDecoration="none">Lifestyles</Text>
                 </Flex>
               </Link>
-              <Link as={Routelink} to="/business">
+              <Link as={Routelink} to="/business"  _hover={{
+                textDecoration:"none"
+              }}>
                 <Flex
                 
                 alignItems="center"
@@ -188,7 +210,9 @@ function App() {
                   <Text textDecoration="none">Business</Text>
                 </Flex>
               </Link>
-              <Link as={Routelink} to="/world">
+              <Link as={Routelink} to="/world"  _hover={{
+                textDecoration:"none"
+              }}>
                 <Flex
                 
                 alignItems="center"
@@ -207,27 +231,29 @@ function App() {
               </Link>
       </Flex>
       {/* //flexend */}
-      <Flex w="90%">
-        <VStack spacing='0px' border="1px solid red" w="25%" align="left" backgroundColor="#f5f5f5">
-          <Link as={Routelink} to="/latestnews">
+      <Flex w="90%" direction={{base:'column',md:'column',lg:"row"}}>
+        <VStack spacing='0px'  w="25%" align="left" backgroundColor="#f5f5f5" display={{base:'none', md:'none',lg:'block'}}>
+          <Link as={Routelink} to="/latestnews" _hover={{
+                textDecoration:"none"
+              }}>
             <Flex
             
             alignItems="center"
             gap="10px"
               h="35px"
               _hover={{
-                backgroundColor: "#ffde2f"
+                backgroundColor: "#ffde2f",
+                textDecoration:"none"
               }}
-              textDecoration="none"
-              // border="1px solid red"
               w="100%"
-              
             >
               <Image src="https://english.cdn.zeenews.com/static/public/icons/icons-latestnews.svg" />
-              <Text textDecoration="none">Latest News</Text>
+              <Text>Latest News</Text>
             </Flex>
           </Link>
-          <Link as={Routelink} to="/photos">
+          <Link as={Routelink} to="/photos"  _hover={{
+                textDecoration:"none"
+              }}>
             <Flex
             
             alignItems="center"
@@ -245,7 +271,9 @@ function App() {
               <Text textDecoration="none">Photos</Text>
             </Flex>
           </Link>
-          <Link as={Routelink} to="/videos">
+          <Link as={Routelink} to="/videos"  _hover={{
+                textDecoration:"none"
+              }}>
             <Flex
             
             alignItems="center"
@@ -262,7 +290,9 @@ function App() {
               <Text textDecoration="none">Videos</Text>
             </Flex>
           </Link>
-          <Link as={Routelink} to="/explainer">
+          <Link as={Routelink} to="/explainer"  _hover={{
+                textDecoration:"none"
+              }}>
             <Flex
             
             alignItems="center"
@@ -279,7 +309,9 @@ function App() {
               <Text textDecoration="none">Explainers</Text>
             </Flex>
           </Link>
-          <Link as={Routelink} to="/india">
+          <Link as={Routelink} to="/india"  _hover={{
+                textDecoration:"none"
+              }}>
             <Flex
             
             alignItems="center"
@@ -296,7 +328,9 @@ function App() {
               <Text textDecoration="none">India</Text>
             </Flex>
           </Link>
-          <Link as={Routelink} to="/entertainment">
+          <Link as={Routelink} to="/entertainment"  _hover={{
+                textDecoration:"none"
+              }}>
             <Flex
             
             alignItems="center"
@@ -313,7 +347,9 @@ function App() {
               <Text textDecoration="none">Entertainment</Text>
             </Flex>
           </Link>
-          <Link as={Routelink} to="/sports">
+          <Link as={Routelink} to="/sports"  _hover={{
+                textDecoration:"none"
+              }}>
             <Flex
             
             alignItems="center"
@@ -330,7 +366,9 @@ function App() {
               <Text textDecoration="none">Sports</Text>
             </Flex>
           </Link>
-          <Link as={Routelink} to="/viralnews">
+          <Link as={Routelink} to="/viralnews"  _hover={{
+                textDecoration:"none"
+              }}>
             <Flex
             
             alignItems="center"
@@ -347,7 +385,9 @@ function App() {
               <Text textDecoration="none">Viral News</Text>
             </Flex>
           </Link>
-          <Link as={Routelink} to="/lifestyles">
+          <Link as={Routelink} to="/lifestyles"  _hover={{
+                textDecoration:"none"
+              }}>
             <Flex
             
             alignItems="center"
@@ -364,7 +404,9 @@ function App() {
               <Text textDecoration="none">Lifestyles</Text>
             </Flex>
           </Link>
-          <Link as={Routelink} to="/business">
+          <Link as={Routelink} to="/business"  _hover={{
+                textDecoration:"none"
+              }}>
             <Flex
             
             alignItems="center"
@@ -381,7 +423,9 @@ function App() {
               <Text textDecoration="none">Business</Text>
             </Flex>
           </Link>
-          <Link as={Routelink} to="/world">
+          <Link as={Routelink} to="/world"  _hover={{
+                textDecoration:"none"
+              }}>
             <Flex
             
             alignItems="center"
@@ -399,10 +443,10 @@ function App() {
             </Flex>
           </Link>
         </VStack>
-        <VStack w="50%" border="1px solid red" backgroundColor="white">
+        <VStack w={{base:'100%',md:'100%',lg:'50%'}}  backgroundColor="white">
           <AllRoutes />
         </VStack>
-        <Box w="25%" h="20px" border="1px solid red"></Box>
+        <Box w={{base:'100%',md:'100%',lg:'25%'}} h="20px" ></Box>
       </Flex>
       <Footer />
     </VStack>

@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick.css";
 import 'slick-carousel/slick/slick-theme.css'
 
 export const FeedVideoSlider =({data})=>{
-    // console.log(data)
+    console.log(data)
     const settings = {
         dots: true,
         slidesToShow: 2,
@@ -26,11 +26,11 @@ export const FeedVideoSlider =({data})=>{
                 <Slider {...settings}>
                     {
                         data?.map((item,ind)=>{
-                            return <VStack key={ind} w="200px"  backgroundColor="2px solid #fde255" padding="6px" >
+                            return <VStack key={ind} w="200px" backgroundColor="2px solid #fde255" padding="6px" borderBottom='2px solid #ffde2f'>
                             <Box>
                                 <Image src={item?.urlToImage} />
                             </Box>
-                            <Box borderBottom='2px solid #ffde2f'>
+                            <Box>
                                 <Text>
                                 {item?.title}
                                 </Text>
@@ -41,11 +41,9 @@ export const FeedVideoSlider =({data})=>{
                                      
                 </Slider>
             </Box>
-            <Box></Box>
-            <Box></Box>
-            <Box h="34px" alignItems="centre" marginTop="0px" width="100%" backgroundColor="#fff" textAlign="center" padding="5px" margin="10px 0px" fontWeight="500" fontFamily="Roboto Slab, sans-serif">
+            <Box h="34px" alignItems="centre" marginTop="50px" width="100%" backgroundColor="#fff" textAlign="center" padding="5px" margin="10px 0px" fontWeight="500" fontFamily="Roboto Slab, sans-serif">
                 <Text>
-                    MORE VIDEOS
+                    MORE PHOTOS
                 </Text>
             </Box>
 
