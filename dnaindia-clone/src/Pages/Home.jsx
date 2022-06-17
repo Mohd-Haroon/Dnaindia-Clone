@@ -10,7 +10,6 @@ import {
     BreadcrumbSeparator,
   } from '@chakra-ui/react'
 
-
 export const Home=()=>{
     const {home,loading,success} = useSelector((store)=>store.news)
     const dispatch = useDispatch()
@@ -20,6 +19,7 @@ export const Home=()=>{
      dispatch(gethomedata())
     },[dispatch])
 
+    
     
     return(
         <VStack backgroundColor="#f5f5f5" marginBottom="20px" width="100%">

@@ -32,7 +32,7 @@ const getHomedataSuccess = (payload) => {
 export const gethomedata = () => (dispatch) => {
   dispatch(loadings());
   axios({
-    url: "http://localhost:8080/home",
+    url: "https://my-server-dna-project.herokuapp.com/home",
     method: "GET",
   })
     .then((res) => {
@@ -54,7 +54,7 @@ const getPhotodataSuccess = (payload) => {
 export const getPagedata = () => (dispatch) => {
   dispatch(loadings());
   axios({
-    url: "http://localhost:8080/photo",
+    url: "https://my-server-dna-project.herokuapp.com/photo",
     method: "GET",
   })
     .then((res) =>{
@@ -75,7 +75,7 @@ const getlATESTdataSuccess = (payload) => {
 export const getlATESTdata = () => (dispatch) => {
   dispatch(loadings());
   axios({
-    url: "http://localhost:8080/latest",
+    url: "https://my-server-dna-project.herokuapp.com/latest",
     method: "GET",
   })
     .then((res) => {
@@ -98,7 +98,7 @@ const getSportsdataSuccess = (payload) => {
 export const getSportsdata = () => (dispatch) => {
   dispatch(loadings());
   axios({
-    url: "http://localhost:8080/sports",
+    url: "https://my-server-dna-project.herokuapp.com/sports",
     method: "GET",
   })
     .then((res) => {
@@ -121,7 +121,7 @@ const getSEntertainmentdataSuccess = (payload) => {
 export const getEntertainmentsdata = () => (dispatch) => {
   dispatch(loadings());
   axios({
-    url: "http://localhost:8080/enter",
+    url: "https://my-server-dna-project.herokuapp.com/enter",
     method: "GET",
   })
     .then((res) => {
@@ -143,7 +143,7 @@ const getExplainersdataSuccess = (payload) => {
 export const getExplainersdata = () => (dispatch) => {
   dispatch(loadings());
   axios({
-    url: "http://localhost:8080/explain",
+    url: "https://my-server-dna-project.herokuapp.com/explain",
     method: "GET",
   })
     .then((res) => {
@@ -165,7 +165,7 @@ const getiNDIAdataSuccess = (payload) => {
 export const getiNDIAdata = () => (dispatch) => {
   dispatch(loadings());
   axios({
-    url: "http://localhost:8080/india",
+    url: "https://my-server-dna-project.herokuapp.com/india",
     method: "GET",
   })
     .then((res) => {
@@ -187,7 +187,7 @@ const getViraldataSuccess = (payload) => {
 export const getViraldata = () => (dispatch) => {
   dispatch(loadings());
   axios({
-    url: "http://localhost:8080/viral",
+    url: "https://my-server-dna-project.herokuapp.com/viral",
     method: "GET",
   })
     .then((res) => {
@@ -209,7 +209,7 @@ const getLifestyledataSuccess = (payload) => {
 export const getLifestyledata = () => (dispatch) => {
   dispatch(loadings());
   axios({
-    url: "http://localhost:8080/life",
+    url: "https://my-server-dna-project.herokuapp.com/life",
     method: "GET",
   })
     .then((res) => {
@@ -231,7 +231,7 @@ const getbUSINESSdataSuccess = (payload) => {
 export const getbUSINESSdata = () => (dispatch) => {
   dispatch(loadings());
   axios({
-    url: "http://localhost:8080/business",
+    url: "https://my-server-dna-project.herokuapp.com/business",
     method: "GET",
   })
     .then((res) => {
@@ -253,7 +253,7 @@ const getWorlddataSuccess = (payload) => {
 export const getWorlddata = () => (dispatch) => {
   dispatch(loadings());
   axios({
-    url: "http://localhost:8080/world",
+    url: "https://my-server-dna-project.herokuapp.com/world",
     method: "GET",
   })
     .then((res) => {
