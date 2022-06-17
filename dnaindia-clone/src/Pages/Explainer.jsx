@@ -20,7 +20,7 @@ export const Explainers=()=>{
      dispatch(getExplainersdata())
     },[dispatch])
 
-    // console.log("explain",explain)
+    
 
     return(
         <VStack backgroundColor="#f5f5f5" marginBottom="20px" width="100%">

@@ -12,6 +12,7 @@ import {ViralNews} from "./ViralNews";
 import {LifeStyles} from "./Lifestyles";
 import {Business} from "./Business";
 import {World} from "./World";
+import {SingleProduct} from "./SingleProduct"
 
 
 export const AllRoutes = () => {
@@ -29,6 +30,7 @@ export const AllRoutes = () => {
       <Route path="/lifestyles" element={<LifeStyles />} />
       <Route path="/business" element={<Business />} />
       <Route path="/world" element={<World />} />
+      <Route path="/latest/:id" element={<SingleProduct />} />
     </Routes>
   );
 };

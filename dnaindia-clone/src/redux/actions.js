@@ -4,23 +4,23 @@ export const actionTypes = {
   ADD_DATA_HOME: "ADD_DATA_HOME",
   ADD_DATA_PHOTOS: "ADD_DATA_PHOTOS",
   ADD_DATA_LATEST: "ADD_DATA_LATEST",
-  ADD_DATA_SPORTS : "ADD_DATA_SPORTS",
+  ADD_DATA_SPORTS: "ADD_DATA_SPORTS",
   ADD_DATA_ENTERTAINMENT: "ADD_DATA_ENTERTAINMENT",
-  ADD_DATA_EXPKAINERS : "ADD_DATA_EXPKAINERS",
+  ADD_DATA_EXPKAINERS: "ADD_DATA_EXPKAINERS",
   LOADING: "LOADING",
   SUCCESS: "SUCCESS",
-  ADD_DATA_INDIA : "ADD_DATA_INDIA",
-  ADD_DATA_VIRAL : "ADD_DATA_VIRAL",
-  ADD_DATA_LIFESTYLE : "ADD_DATA_LIFESTYLE",
-  ADD_DATA_BUSINESS : "ADD_DATA_BUSINESS",
-  ADD_DATA_WORLD : "ADD_DATA_WORLD",
+  ADD_DATA_INDIA: "ADD_DATA_INDIA",
+  ADD_DATA_VIRAL: "ADD_DATA_VIRAL",
+  ADD_DATA_LIFESTYLE: "ADD_DATA_LIFESTYLE",
+  ADD_DATA_BUSINESS: "ADD_DATA_BUSINESS",
+  ADD_DATA_WORLD: "ADD_DATA_WORLD",
 };
 
 const loadings = () => {
   return {
-    type: actionTypes.LOADING
-  }
-}
+    type: actionTypes.LOADING,
+  };
+};
 
 const getHomedataSuccess = (payload) => {
   return {
@@ -30,14 +30,14 @@ const getHomedataSuccess = (payload) => {
 };
 
 export const gethomedata = () => (dispatch) => {
-  dispatch(loadings())
+  dispatch(loadings());
   axios({
-    url: "https://newsapi.org/v2/top-headlines?sources=bbc-news&pageSize=100&apiKey=f882fb5af9da4f55a51ffa93be93395d",
+    url: "http://localhost:8080/home",
     method: "GET",
   })
     .then((res) => {
-      // console.log("res", res);
-      dispatch(getHomedataSuccess(res.data.articles));
+      // console.log("home", res);
+      dispatch(getHomedataSuccess(res.data));
     })
     .catch((err) => console.log("error", err));
 };
@@ -52,12 +52,14 @@ const getPhotodataSuccess = (payload) => {
 };
 
 export const getPagedata = () => (dispatch) => {
-  dispatch(loadings())
+  dispatch(loadings());
   axios({
-    url: "https://newsapi.org/v2/top-headlines?country=in&pageSize=100&apiKey=f882fb5af9da4f55a51ffa93be93395d",
+    url: "http://localhost:8080/photo",
     method: "GET",
   })
-    .then((res) => dispatch(getPhotodataSuccess(res.data.articles)))
+    .then((res) =>{
+      // console.log("photo", res);
+       dispatch(getPhotodataSuccess(res.data))})
     .catch((err) => console.log("error", err));
 };
 
@@ -71,14 +73,14 @@ const getlATESTdataSuccess = (payload) => {
 };
 
 export const getlATESTdata = () => (dispatch) => {
-  dispatch(loadings())
+  dispatch(loadings());
   axios({
-    url: "https://newsapi.org/v2/top-headlines?country=in&pageSize=100&apiKey=f882fb5af9da4f55a51ffa93be93395d",
+    url: "http://localhost:8080/latest",
     method: "GET",
   })
     .then((res) => {
-      // console.log("la",res.data.articles)
-      dispatch(getlATESTdataSuccess(res.data.articles));
+      // console.log("la",res.data)
+      dispatch(getlATESTdataSuccess(res.data));
     })
     .catch((err) => console.log("error", err));
 };
@@ -94,14 +96,14 @@ const getSportsdataSuccess = (payload) => {
 };
 
 export const getSportsdata = () => (dispatch) => {
-  dispatch(loadings())
+  dispatch(loadings());
   axios({
-    url: "https://newsapi.org/v2/everything?q=sports&pageSize=100&apiKey=f882fb5af9da4f55a51ffa93be93395d",
+    url: "http://localhost:8080/sports",
     method: "GET",
   })
     .then((res) => {
-      // console.log("la",res.data.articles)
-      dispatch(getSportsdataSuccess((res.data.articles)));
+      // console.log("lasports",res.data)
+      dispatch(getSportsdataSuccess(res.data));
     })
     .catch((err) => console.log("error", err));
 };
@@ -117,14 +119,14 @@ const getSEntertainmentdataSuccess = (payload) => {
 };
 
 export const getEntertainmentsdata = () => (dispatch) => {
-  dispatch(loadings())
+  dispatch(loadings());
   axios({
-    url: "https://newsapi.org/v2/everything?q=sports&pageSize=100&apiKey=f882fb5af9da4f55a51ffa93be93395d",
+    url: "http://localhost:8080/enter",
     method: "GET",
   })
     .then((res) => {
-      // console.log("la",res.data.articles)
-      dispatch(getSEntertainmentdataSuccess((res.data.articles)));
+      // console.log("entertain",res.data)
+      dispatch(getSEntertainmentdataSuccess(res.data));
     })
     .catch((err) => console.log("error", err));
 };
@@ -139,14 +141,14 @@ const getExplainersdataSuccess = (payload) => {
 };
 
 export const getExplainersdata = () => (dispatch) => {
-  dispatch(loadings())
+  dispatch(loadings());
   axios({
-    url: "https://newsapi.org/v2/everything?q=explainers&pageSize=100&apiKey=f882fb5af9da4f55a51ffa93be93395d",
+    url: "http://localhost:8080/explain",
     method: "GET",
   })
     .then((res) => {
-      // console.log("EXPLAIN",res.data.articles)
-      dispatch(getExplainersdataSuccess((res.data.articles)));
+      // console.log("EXPLAINers",res.data)
+      dispatch(getExplainersdataSuccess(res.data));
     })
     .catch((err) => console.log("error", err));
 };
@@ -161,14 +163,14 @@ const getiNDIAdataSuccess = (payload) => {
 };
 
 export const getiNDIAdata = () => (dispatch) => {
-  dispatch(loadings())
+  dispatch(loadings());
   axios({
-    url: "https://newsapi.org/v2/top-headlines?country=in&pageSize=100&apiKey=f882fb5af9da4f55a51ffa93be93395d",
+    url: "http://localhost:8080/india",
     method: "GET",
   })
     .then((res) => {
-      // console.log("EXPLAIN",res.data.articles)
-      dispatch(getiNDIAdataSuccess((res.data.articles)));
+      // console.log("india",res.data)
+      dispatch(getiNDIAdataSuccess(res.data));
     })
     .catch((err) => console.log("error", err));
 };
@@ -183,14 +185,14 @@ const getViraldataSuccess = (payload) => {
 };
 
 export const getViraldata = () => (dispatch) => {
-  dispatch(loadings())
+  dispatch(loadings());
   axios({
-    url: "https://newsapi.org/v2/everything?q=viral-news&pageSize=100&sortBy=popularity&apiKey=f882fb5af9da4f55a51ffa93be93395d",
+    url: "http://localhost:8080/viral",
     method: "GET",
   })
     .then((res) => {
-      // console.log("EXPLAIN",res.data.articles)
-      dispatch(getViraldataSuccess((res.data.articles)));
+      // console.log("viralnews",res.data)
+      dispatch(getViraldataSuccess(res.data));
     })
     .catch((err) => console.log("error", err));
 };
@@ -205,14 +207,14 @@ const getLifestyledataSuccess = (payload) => {
 };
 
 export const getLifestyledata = () => (dispatch) => {
-  dispatch(loadings())
+  dispatch(loadings());
   axios({
-    url: "https://newsapi.org/v2/everything?q=lifestyle&pageSize=100&sortBy=popularity&apiKey=f882fb5af9da4f55a51ffa93be93395d",
+    url: "http://localhost:8080/life",
     method: "GET",
   })
     .then((res) => {
-      // console.log("EXPLAIN",res.data.articles)
-      dispatch(getLifestyledataSuccess((res.data.articles)));
+      // console.log("lifesty",res.data)
+      dispatch(getLifestyledataSuccess(res.data));
     })
     .catch((err) => console.log("error", err));
 };
@@ -227,14 +229,14 @@ const getbUSINESSdataSuccess = (payload) => {
 };
 
 export const getbUSINESSdata = () => (dispatch) => {
-  dispatch(loadings())
+  dispatch(loadings());
   axios({
-    url: "https://newsapi.org/v2/top-headlines?q=Business&pageSize=100&sortBy=popularity&apiKey=f882fb5af9da4f55a51ffa93be93395d",
+    url: "http://localhost:8080/business",
     method: "GET",
   })
     .then((res) => {
-      // console.log("EXPLAIN",res.data.articles)
-      dispatch(getbUSINESSdataSuccess((res.data.articles)));
+      // console.log("busines",res.data.articles)
+      dispatch(getbUSINESSdataSuccess(res.data));
     })
     .catch((err) => console.log("error", err));
 };
@@ -249,14 +251,14 @@ const getWorlddataSuccess = (payload) => {
 };
 
 export const getWorlddata = () => (dispatch) => {
-  dispatch(loadings())
+  dispatch(loadings());
   axios({
-    url: "https://newsapi.org/v2/everything?q=Business&pageSize=100&sortBy=popularity&apiKey=f882fb5af9da4f55a51ffa93be93395d",
+    url: "http://localhost:8080/world",
     method: "GET",
   })
     .then((res) => {
-      // console.log("world",res.data.articles)
-      dispatch(getWorlddataSuccess((res.data.articles)));
+      // console.log("world",res.data)
+      dispatch(getWorlddataSuccess(res.data));
     })
     .catch((err) => console.log("error", err));
 };

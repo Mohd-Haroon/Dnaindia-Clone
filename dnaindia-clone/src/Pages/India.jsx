@@ -20,7 +20,6 @@ export const India=()=>{
      dispatch(getiNDIAdata())
     },[dispatch])
 
-    // console.log("home1sportsenter",enter)
 
     return(
         <VStack backgroundColor="#f5f5f5" marginBottom="20px" width="100%">
