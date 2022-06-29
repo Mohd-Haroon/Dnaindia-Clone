@@ -3,7 +3,7 @@ At the end of unit Masai team is assigned a project and the project is based on 
 
 
 Let’s take a look of our project : -
-https://github.com/Mohd-Haroon/Dnaindia-Clone/blob/main/dnaindia-clone/Screenshot%20(1413).png
+![image](https://github.com/Mohd-Haroon/Dnaindia-Clone/blob/main/dnaindia-clone/Screenshot%20(1413).png)
 
 
 Github link : https://github.com/Mohd-Haroon/Dnaindia-Clone
