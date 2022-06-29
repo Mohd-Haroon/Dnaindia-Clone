@@ -7,7 +7,11 @@ Let’s take a look of our project : -
 
 
 Github link : https://github.com/Mohd-Haroon/Dnaindia-Clone
+
+
 Medium :- https://medium.com/@qureshiharoon010203/masai-construct-week-project-d503c6f0e6e2
+
+
 Live: https://dna-inda-clone-hq.netlify.app/
 
 About DNAIndia 
