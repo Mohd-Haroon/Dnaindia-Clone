@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# DNAindia clone
+At the end of unit Masai team is assigned a project and the project is based on the technology I are learned in the whole unit in this project I used React- Redux and React -Router-Dom.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+Let’s take a look of our project : -
+https://github.com/Mohd-Haroon/Dnaindia-Clone/blob/main/dnaindia-clone/Screenshot%20(1413).png
 
-In the project directory, you can run:
 
-### `npm start`
+Github link : https://github.com/Mohd-Haroon/Dnaindia-Clone
+Medium :- https://medium.com/@qureshiharoon010203/masai-construct-week-project-d503c6f0e6e2
+Live: https://dna-inda-clone-hq.netlify.app/
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+About DNAIndia 
+DNAIndia is an One of the leading newspaper and news portal in India
+People can view or read the whole world news free of cost at DNAIndia.com.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<ul>
+A Quick Tour of our Project
+  <li>Landing Page</li>
+   <li>Header</li>
+  <li>Footer</li>
+  <li>Body(Home)</li> 
+  <li>Category section</li>
+</ul>
+<p></p>
 
-### `npm test`
+<ul>The Tech Stack used:-:
+  <li>React</li>
+  <li>Redux</li> 
+  <li>Chakra-UI library</li>
+  <li>React router-dom</li>
+</ul>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<ul>Platforms used:
+  <li>VS Code as IDE</li>
+   <li>Slack for communication</li> 
+  <li>Git for collaboration</li> 
+  <li>Zoom for meets</li>
+</ul>
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+My first individual project from Masai , with my knowledge and help from my respected IA and Instructor i was able to complete the project in 6 day.
